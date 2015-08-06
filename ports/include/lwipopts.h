@@ -90,7 +90,7 @@
 **                          Memory Options
 *****************************************************************************/
 #define MEM_ALIGNMENT                   4
-#define MEM_SIZE                        (128 * 1024) /* 128K */
+#define MEM_SIZE                        (256 * 1024) /* 128K */
 
 #define MEMP_NUM_PBUF                   96
 #define MEMP_NUM_TCP_PCB                32
