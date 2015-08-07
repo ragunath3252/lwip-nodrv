@@ -37,7 +37,6 @@ index 0000000..9078713
 +include $(RTEMS_CUSTOM)
 +include $(PROJECT_ROOT)/make/leaf.cfg
 +
-+INSTALL_DIR=/home/ragu/build_tools/rtems_latest/arm-rtems4.11/beagleboneblack/lib/include/lwip
 +
 +#### CONFIG ####################################################################
 +#For debugging symbols add -DLWIP_DEBUG 
@@ -193,6 +192,7 @@ index 0000000..9078713
 +${ARCH}/%.o: $(LWIPDRIVER_SRC_PATH)/%.c
 +	${COMPILE.c} $(AM_CPPFLAGS) $(AM_CXXFLAGS) -o $@ $<
 +
++INSTALL_DIR=$(RTEMS_MAKEFILE_PATH)/lwip
 +
 +install:
 +	rm -rf $(INSTALL_DIR)
